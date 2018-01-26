@@ -1,9 +1,17 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<widget xmlns   = "http://www.w3.org/ns/widgets"
-    xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "com.rexauditz.pdsl"
-    versionCode = "1" 
-    version     = "1.0.0" >
+<widget xmlns = "http://www.w3.org/ns/widgets"
+	xmlns:gap = "http://phonegap.com/ns/1.0"
+	id        = "com.binarysoft.emumap"
+	versionCode="5"
+	version   = "5.0.0">
+	<preference name="phonegap-version" value="cli-6.5.0"/>
+
+    <plugin name="cordova-plugin-whitelist" source="npm" />
+    <access origin="*" />
+    <allow-navigation href="*" />
+    <allow-intent href="*" />
+   
+    <platform name="android" />
+	
    <name>Chi Conf</name>
     <description>
            CHI Event Management App
@@ -12,10 +20,6 @@
             Prime Data Solution
     </author>
     
-    <platform name="ios"/>
-    <platform name="android"/>
-    <platform name="winphone"/>
-    <preference name="phonegap-version" value="cli-6.1.0" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="false" />
@@ -33,7 +37,7 @@
     <preference name="android-minSdkVersion" value="21" />
     <preference name="android-installLocation" value="auto" />
     
-      
+       <icon src="icon.png" />
       
        <platform name="android">
         <icon src="res/icon/android/drawable-ldpi-icon" qualifier="ldpi"/>
@@ -79,9 +83,6 @@
       <platform name="android">
         <allow-intent href="market:*"/>
       </platform>
-      <platform name="ios">
-        <allow-intent href="itms:*"/>
-        <allow-intent href="itms-apps:*"/>
-      </platform>
+ 
       
 </widget>
